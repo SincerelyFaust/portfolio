@@ -1,15 +1,20 @@
-export function getTime() {
-  const options: Intl.DateTimeFormatOptions = {
-      timeZone: "Europe/Zagreb",
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-      hour12: false,
-      weekday: "long",
-    },
-    formatter = new Intl.DateTimeFormat(["en-GB"], options);
+import dayjs from "dayjs";
+import "dayjs/locale/en-gb";
+import utc from "dayjs/plugin/utc";
+import timezone from "dayjs/plugin/timezone";
 
-  return formatter.format(new Date());
+dayjs.locale("en-gb");
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
+export function getDay(): string {
+  return dayjs().tz("Europe/Zagreb").format("dddd");
+}
+
+export function getTime(): string {
+  return dayjs().tz("Europe/Zagreb").format("HH:mm");
+}
+
+export function getDate(): string {
+  return dayjs().tz("Europe/Zagreb").format("DD. MM. YYYY.");
 }

@@ -7,6 +7,9 @@
 - 🚶‍♂️ Animated with Framer Motion
 - 🔼 Deployed with Vercel
 
+Older versions: 
+- [v1](https://website-mmhrmus86-sincerelyfaust.vercel.app/)
+
 ## Development
 
 To develop and locally test the website:
