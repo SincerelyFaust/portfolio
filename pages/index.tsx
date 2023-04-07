@@ -10,7 +10,7 @@ import {
   GitHubLogo,
   LinkedInLogo,
   InstagramLogo,
-  MailLogo,
+  // MailLogo,
 } from "../components/Icons";
 import { calculateHourDifference } from "../utils/CalculateHourDIfference";
 import { getDate, getDay, getTime } from "../utils/GetTime";
