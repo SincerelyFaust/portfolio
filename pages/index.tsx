@@ -72,9 +72,6 @@ const Index: NextPage = () => {
       ? "afternoon"
       : "night";
 
-  const themeVariant =
-    theme === "system" ? "system" : theme === "dark" ? "dark" : "light";
-
   return (
     <>
       <Head>
@@ -218,9 +215,22 @@ const Index: NextPage = () => {
           </div>
           {/* Theme */}
           <div
-            onClick={() => setTheme(themeVariant)}
+            onClick={() =>
+              setTheme(
+                theme === "system"
+                  ? "dark"
+                  : theme === "dark"
+                  ? "light"
+                  : "system",
+              )
+            }
             className={ThemeCard({
-              variant: themeVariant,
+              variant:
+                theme === "system"
+                  ? "system"
+                  : theme === "dark"
+                  ? "dark"
+                  : "light",
             })}
           ></div>
           {/* About */}
