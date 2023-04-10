@@ -10,6 +10,16 @@ import {
   GitHubLogo,
   LinkedInLogo,
   InstagramLogo,
+  FigmaLogo,
+  NextJSLogo,
+  ReactLogo,
+  FlutterLogo,
+  DartLogo,
+  AfterEffectsLogo,
+  PhotoshopLogo,
+  TauriLogo,
+  TypeScriptLogo,
+  ExpoLogo,
   // MailLogo,
 } from "../components/Icons";
 import { calculateHourDifference } from "../utils/CalculateHourDIfference";
@@ -107,13 +117,8 @@ const Index: NextPage = () => {
             </p>
             <p className="text-2xl font-bold text-white">Marin Heđeš</p>
           </div>
-          {/* Skills */}
-          <div className="col-span-4 row-span-2 flex flex-col-reverse items-start justify-start gap-2 rounded-4xl bg-white bg-skills bg-cover bg-center bg-no-repeat px-8 py-6">
-            <Link href={"/skills"} className="text-white hover:underline">
-              What I can do <span className="">&gt;</span>
-            </Link>
-            <p className="text-2xl font-bold text-white">Skills</p>
-          </div>
+          {/* Contact */}
+          <div className="col-span-4 row-span-2 flex flex-col-reverse items-start justify-start gap-2 rounded-4xl bg-black px-8 py-6 dark:bg-white"></div>
           {/* Time */}
           <div
             className={TimeCard({
@@ -152,8 +157,21 @@ const Index: NextPage = () => {
           >
             <InstagramLogo />
           </Link>
-          {/* Something */}
-          <div className="col-span-2 row-span-4 rounded-4xl bg-black dark:bg-white"></div>
+          {/* Skills */}
+          <div className="col-span-2 row-span-4 flex items-center justify-center rounded-4xl bg-sky-400">
+            <div className="grid grid-cols-2 gap-10">
+              <NextJSLogo className="col-span-1" />
+              <ReactLogo className="col-span-1" />
+              <TypeScriptLogo className="col-span-1" />
+              <FlutterLogo className="col-span-1" />
+              <DartLogo className="col-span-1" />
+              <AfterEffectsLogo className="col-span-1" />
+              <PhotoshopLogo className="col-span-1" />
+              <TauriLogo className="col-span-1" />
+              <ExpoLogo className="col-span-1" />
+              <FigmaLogo className="col-span-1" />
+            </div>
+          </div>
           {/* Socials */}
           <Link
             href={"/github"}
