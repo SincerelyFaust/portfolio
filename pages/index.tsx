@@ -158,7 +158,7 @@ const Index: NextPage = () => {
             <InstagramLogo />
           </Link>
           {/* Skills */}
-          <div className="col-span-2 row-span-4 flex items-center justify-center rounded-4xl bg-sky-400">
+          <div className="col-span-2 row-span-4 flex items-center justify-center rounded-4xl bg-gradient-to-b from-indigo-300 to-purple-400">
             <div className="grid grid-cols-2 gap-10">
               <NextJSLogo className="col-span-1" />
               <ReactLogo className="col-span-1" />
@@ -252,7 +252,7 @@ const Index: NextPage = () => {
             })}
           ></div>
           {/* About */}
-          <div className="col-span-6 row-span-2 flex flex-col-reverse items-start justify-center gap-2 rounded-4xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 px-8 py-6">
+          <div className="col-span-6 row-span-2 flex flex-col-reverse items-start justify-center gap-2 rounded-4xl bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-10">
             <p className="text-lg text-white">
               I&apos;m a {calculateAge("23/02/2001")} year old self-taught
               graphic/motion designer and a developer based in 🇭🇷 Slavonski

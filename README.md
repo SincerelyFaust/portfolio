@@ -8,7 +8,7 @@
 - 🔼 Deployed with Vercel
 
 Older versions: 
-- [v1](https://website-mmhrmus86-sincerelyfaust.vercel.app/)
+- [v1](https://website-ngi8tb9gt-sincerelyfaust.vercel.app/)
 
 ## Development
 
