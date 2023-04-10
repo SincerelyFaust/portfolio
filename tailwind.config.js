@@ -39,7 +39,7 @@ module.exports = {
         night: "url(/images/bg/night.webp)",
       },
       backgroundSize: {
-        contain: "110%",
+        "size-110": "110%",
       },
       gridTemplateRows: {
         8: "repeat(8, minmax(0, 1fr))",
